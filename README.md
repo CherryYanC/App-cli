@@ -7,8 +7,6 @@
 - iOS
 - HarmonyOS
 
-项目目前处于初始化状态，仅包含一个 `Hello World` 页面。Pinia 持久化、uni-ui、网络请求封装、ESLint、Prettier、Husky 和 lint-staged 已完成基础接入；暂未引入国际化及其他业务插件。
-
 ## 技术栈
 
 | 技术                        | 用途               |
