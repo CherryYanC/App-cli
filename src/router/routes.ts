@@ -1,6 +1,6 @@
 /** pages.json 中已注册页面的路径常量，避免在业务代码中散落字符串。 */
 export const ROUTES = {
-  HOME: '/pages/index',
+  HOME: '/pages/home/index',
 } as const
 
 export type AppRoute = (typeof ROUTES)[keyof typeof ROUTES]

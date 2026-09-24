@@ -7,9 +7,9 @@
   },
   "pages": [
     {
-      "path": "pages/index",
+      "path": "pages/index/index",
       "style": {
-        "navigationBarTitleText": "Hello World"
+        "navigationBarTitleText": "首页"
       }
     }
   ],

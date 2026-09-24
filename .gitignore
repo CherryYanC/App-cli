@@ -12,6 +12,9 @@ dist
 .DS_Store
 *.local
 .idea
+.vscode
+.hbuilderx
+.vite
 
 # Local environment overrides and secrets
 .env.local

@@ -10,6 +10,9 @@
     "pages.json": "jsonc", // pages.json 可以写注释
     "manifest.json": "jsonc" // manifest.json 可以写注释
   },
+  "editor.codeActionsOnSave": {
+    "source.fixAll.eslint": "explicit"
+  },
   "files.trimTrailingWhitespace": true,
   "typescript.tsdk": "node_modules\\typescript\\lib"
 }

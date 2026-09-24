@@ -65,11 +65,16 @@ $app-duration-fast: 150ms;
 $app-duration-base: 250ms;
 $app-duration-slow: 400ms;
 
-/* 层级 */
-$app-z-index-sticky: 100;
-$app-z-index-overlay: 1000;
-$app-z-index-modal: 1100;
-$app-z-index-toast: 1200;
+/*
+ * 全局层级规范（从低到高）：页面内容 < 吸顶元素 < TabBar < 遮罩 < 弹窗 < Toast。
+ * 普通页面元素不得使用大于等于 $app-z-index-tab-bar 的层级，避免覆盖底部导航。
+ * 弹层组件应从 overlay 层开始使用，确保遮罩可以完整覆盖 TabBar。
+ */
+$app-z-index-sticky: 100; // 页面内吸顶栏、悬浮按钮等普通浮层
+$app-z-index-tab-bar: 900; // 全局底部导航，高于所有普通页面元素
+$app-z-index-overlay: 1000; // 弹窗、抽屉等组件的全屏遮罩
+$app-z-index-modal: 1100; // 对话框、弹窗和抽屉的主体内容
+$app-z-index-toast: 1200; // Toast、全局提示等需要始终可见的反馈
 
 /* uni-app / uni-ui 兼容变量 */
 $uni-color-primary: $app-color-primary;
