@@ -1,4 +1,4 @@
-# Spirit Fox App
+# App
 
 基于 Vue 3、TypeScript、Vite 和 uni-app 的多端应用基座，目标平台为：
 
